@@ -1,0 +1,7 @@
+source leaprc.protein.ff19SB
+source leaprc.DNA.bsc1
+mol = loadpdb 0_prepare/wt.pqr
+set default pbradii mbondi3
+saveamberparm mol 1_build/box.prmtop 1_build/box.inpcrd
+savepdb mol 1_build/box.pdb
+quit

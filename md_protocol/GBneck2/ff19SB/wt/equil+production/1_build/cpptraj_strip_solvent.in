@@ -1,0 +1,5 @@
+parm 1_build/box.prmtop
+trajin 1_build/box.inpcrd
+strip :WAT,K+,Cl- parmout 1_build/nucleosome.prmtop
+trajout 1_build/nucleosome.pdb pdb
+run
